@@ -44,6 +44,7 @@
 % bib-settings
 \RequirePackage{natbib}
 \setlength{\bibsep}{0.0pt}
+\setlength{\parindent}{2em}
 \def\bibfont{\footnotesize}
 
 % settings for the geometry
