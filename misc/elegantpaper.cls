@@ -26,12 +26,13 @@
 \RequirePackage{xcolor}
 \RequirePackage{graphicx}
 \RequirePackage{fancyvrb}
+\RequirePackage{float}
 \graphicspath{{image/}{figure/}{fig/}{img/}}
 
 % caption settings 
 \RequirePackage[font=small,labelfont={bf}]{caption} 
-\captionsetup[table]{skip=3pt}
-\captionsetup[figure]{skip=3pt}
+\captionsetup[table]{name=表,skip=3pt,labelformat=simple,labelsep=period}
+\captionsetup[figure]{name=图,labelformat=simple,labelsep=period}
 
 % list/itemize/enumerate setting
 \RequirePackage[shortlabels]{enumitem}
@@ -76,6 +77,3 @@
 
 \newcommand\figref[1]{\textbf{Figure}~\ref{#1}}
 \newcommand\tabref[1]{\textbf{Table}~\ref{#1}}
-
-
-
