@@ -1,0 +1,81 @@
+% !TEX encoding = UTF-8 Unicode
+\documentclass[
+10pt,
+aspectratio=169,
+]{beamer}
+\setbeamercovered{transparent=10}
+\usetheme[
+%  showheader,
+%  red,
+  purple,
+%  gray,
+%  graytitle,
+  colorblocks,
+%  noframetitlerule,
+]{Verona}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lipsum}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Mac上使用如下命令声明隶书字体，windows也有相关方式，大家可自行修改
+\providecommand{\lishu}{\CJKfamily{zhli}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{tikz}
+\usetikzlibrary{fadings}
+%
+%\setbeamertemplate{sections/subsections in toc}[ball]
+\usepackage{xeCJK}
+\usepackage{listings}
+\usepackage{caption}
+\usepackage{subcaption}
+\usefonttheme{professionalfonts}
+\def\mathfamilydefault{\rmdefault}
+\usepackage{amsmath}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{bm}
+\setbeamertemplate{section in toc}{\hspace*{1em}\inserttocsectionnumber.~\inserttocsection\par}
+\setbeamertemplate{subsection in toc}{\hspace*{2em}\inserttocsectionnumber.\inserttocsubsectionnumber.~\inserttocsubsection\par}
+\setbeamerfont{subsection in toc}{size=\small}
+\AtBeginSection[]{%
+	\begin{frame}%
+		\frametitle{Outline}%
+		\textbf{\tableofcontents[currentsection]} %
+	\end{frame}%
+}
+
+\AtBeginSubsection[]{%
+	\begin{frame}%
+		\frametitle{Outline}%
+		\textbf{\tableofcontents[currentsection, currentsubsection]} %
+	\end{frame}%
+}
+
+\title{Knowledge Graph Completion: \\
+ConvR \& ConvKB}
+\subtitle{\ }
+
+\author[Shuibin Long]{龙水彬}
+\institute[Beijing Institute of Technology]{Beijing Institute of Technology}
+\date{\today}
+\titlegraphic[width=3cm]{assets/logo_01}{}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ----------- 标题页 ------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{document}
+
+\maketitle
+
+\input{parts/convkb}
+\input{parts/convr}
+
+\end{document}
+
+
